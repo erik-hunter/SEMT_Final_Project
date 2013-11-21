@@ -1,10 +1,10 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0'
-
+# Also a merge conflict
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-# merge conflict??
+
 gem 'sqlite3'
 
 
