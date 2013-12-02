@@ -17,6 +17,11 @@ group :assets do
   gem 'uglifier'
 end
 
+group :test do
+  gem 'cucumber-rails'
+  gem 'cucumber-rails-training-wheels'
+end
+
 gem 'jquery-rails'
 
 # Use unicorn as the web server
