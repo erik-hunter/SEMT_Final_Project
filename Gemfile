@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails', '3.2.13'
 # TC add
 # Also a merge conflict
 # Bundle edge Rails instead:
@@ -12,9 +12,9 @@ gem 'sqlite3'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails', "  ~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
-  gem 'uglifier'
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'uglifier', '>= 1.0.3'
   gem 'database_cleaner'
   gem 'capybara'
   gem 'email_spec', ">= 1.4.0"
@@ -27,7 +27,7 @@ group :test do
   gem "email_spec", ">= 1.4.0"
   gem "launchy", ">= 2.1.2"
   gem 'capybara'
-  gem 'minitest'
+  gem 'minitest', "4.7.5"
 end
 
 gem "factory_girl_rails", ">= 4.2.0", :group => [:development, :test]
