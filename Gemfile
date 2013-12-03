@@ -21,12 +21,13 @@ group :assets do
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'
   gem "email_spec", ">= 1.4.0"
   gem "launchy", ">= 2.1.2"
   gem 'capybara'
+  gem 'minitest'
 end
 
 gem "factory_girl_rails", ">= 4.2.0", :group => [:development, :test]

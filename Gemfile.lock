@@ -108,6 +108,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25)
+    minitest (5.0.8)
     multi_json (1.8.2)
     multi_test (0.0.2)
     nokogiri (1.5.5)
@@ -203,6 +204,7 @@ DEPENDENCIES
   figaro (>= 0.5.3)
   jquery-rails
   launchy (>= 2.1.2)
+  minitest
   quiet_assets (>= 1.0.1)
   rails (= 3.1.0)
   rspec-rails (>= 2.12.2)
