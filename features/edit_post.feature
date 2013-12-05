@@ -9,7 +9,7 @@ Feature: Edit a post
 		Then I should see a edit post link
 		When I press edit post
 		Then I should be on the edit post page
-                When I change the post content
+        When I change the post content
 		And I press save
 		Then I should be on the posts page
 		And My post should be edited

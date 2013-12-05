@@ -1,5 +1,5 @@
 
-Then(/^I should ?(not )see a ([^"]*) link$/) do |not_see, link_name|
+Then(/^I should (not )?see a ([^"]*) link$/) do |not_see, link_name|
   if not_see
   	page.should_not have_content(link_name)
   else
