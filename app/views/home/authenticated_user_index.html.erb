@@ -9,9 +9,9 @@
  
 <% Post.where(user_id: current_user.id).each do |post| %>
   <tr>
-    <td><%= post.Title %></td>
-    <td><%= post.Content %></td>
-    <td>EDIT LINK GOES HERE</td>
+    <td><%= post.Title %>  </td>
+    <td><%= post.Content %>  </td>
+    <td><%= link_to 'Edit Post', edit_post_path(post.id) %>  </td>
   </tr>
 <% end %>
 </table>
