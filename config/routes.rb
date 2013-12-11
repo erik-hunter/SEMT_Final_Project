@@ -1,6 +1,6 @@
 FinalProject::Application.routes.draw do
-  resources :Post
-
+  resources :post
+  
   authenticated :user do
     root :to => "home#authenticated_user_index"
   end
