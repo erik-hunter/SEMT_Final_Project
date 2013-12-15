@@ -3,6 +3,9 @@ class PostController < ApplicationController
   	params[:post][:user_id] = current_user.id
   	if @post = Post.create(params[:post])
   		@post.user_id = current_user.id
+  		
+  		PostMailer.send_post(@post).deliver
+  		
   		redirect_to '/'
   	else
   		redirect_to new_post_path
