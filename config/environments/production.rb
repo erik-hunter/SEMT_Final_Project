@@ -1,6 +1,6 @@
 FinalProject::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-  config.action_mailer.default_url_options = { :host => 'http://glacial-hamlet-5766.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'smtp.sendgrid.net'} 
   # Code is not reloaded between requests
   config.cache_classes = true
 
