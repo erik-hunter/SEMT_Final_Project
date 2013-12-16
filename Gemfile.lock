@@ -111,6 +111,7 @@ GEM
     multi_test (0.0.2)
     nokogiri (1.5.5)
     orm_adapter (0.5.0)
+    pg (0.17.0)
     polyglot (0.3.3)
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
@@ -129,6 +130,11 @@ GEM
       activesupport (= 3.2.13)
       bundler (~> 1.0)
       railties (= 3.2.13)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.1)
+    rails_stdout_logging (0.0.3)
     railties (3.2.13)
       actionpack (= 3.2.13)
       activesupport (= 3.2.13)
@@ -201,8 +207,10 @@ DEPENDENCIES
   jquery-rails
   launchy (>= 2.1.2)
   minitest (= 4.7.5)
+  pg
   quiet_assets (>= 1.0.1)
   rails (= 3.2.13)
+  rails_12factor
   rspec-rails (>= 2.12.2)
   sass-rails (~> 3.2.3)
   sqlite3
