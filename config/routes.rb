@@ -8,4 +8,6 @@ FinalProject::Application.routes.draw do
   root :to => "home#index"
   devise_for :users
   
+  get 'declare_user_dead' => 'users#show_declare_dead_page'
+  post 'send_users_posts' => 'users#send_users_posts'
 end

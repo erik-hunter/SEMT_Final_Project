@@ -4,8 +4,6 @@ class PostController < ApplicationController
   	if @post = Post.create(params[:post])
   		@post.user_id = current_user.id
   		
-  		PostMailer.send_post(@post).deliver
-  		
   		redirect_to '/'
   	else
   		redirect_to new_post_path
@@ -35,4 +33,5 @@ class PostController < ApplicationController
   def index
     @posts = Post.all
   end
+  
 end
