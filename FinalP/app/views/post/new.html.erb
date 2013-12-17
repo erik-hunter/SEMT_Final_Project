@@ -1,0 +1,7 @@
+<%= form_for Post.new, :url => {:action => :create, :controller => :post}  do |f| %>
+  Post Title: <%= f.text_field :Title %><br />
+  Post Content: <%= f.text_field :Content %><br />
+  Post Recepients: <%= f.text_field :Recepients %><br />
+  
+  <%= f.submit %>
+<% end %>
