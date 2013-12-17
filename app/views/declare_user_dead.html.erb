@@ -2,5 +2,7 @@
 
 <%= form_tag '/send_users_posts' do %>
   User's ID: <%= number_field_tag "UserID" %> <br />
+  User's Email: <%= text_field_tag "Email" %> <br />
+  User's Name: <%= text_field_tag "Name" %> <br />
   <%= submit_tag "Declare Dead" %>
 <% end %>
