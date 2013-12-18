@@ -1,4 +1,4 @@
-gsource 'http://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '3.2.13'
 # TC add
