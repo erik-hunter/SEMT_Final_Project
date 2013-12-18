@@ -1,6 +1,7 @@
+
 <h1><%=current_user.name%>'s posts</h1>
  
-<table>
+<table class="table table-striped">
   <tr>
     <th>Title</th>
     <th>Content</th>
@@ -21,4 +22,3 @@
 <p><%= link_to 'Create Post', new_post_path%></p>
 
 <p><%= link_to 'Declare a user dead', '/declare_user_dead/'%></p>
- 
