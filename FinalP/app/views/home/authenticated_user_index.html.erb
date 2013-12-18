@@ -1,0 +1,24 @@
+<h1>View Posts For User <%=current_user.id%></h1>
+ 
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th></th>
+  </tr>
+ 
+<% Post.where(user_id: current_user.id).each do |post| %>
+  <tr>
+    <td><%= post.Title %>  </td>
+    <td><%= post.Content %>  </td>
+    <td><%= link_to 'Edit Post', edit_post_path(post.id) %>  </td>
+  </tr>
+<% end %>
+</table>
+ 
+<br />
+
+<p><%= link_to 'Create Post', new_post_path%></p>
+
+<p><%= link_to 'Declare a user dead', '/declare_user_dead/'%></p>
+ 

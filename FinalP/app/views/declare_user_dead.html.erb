@@ -1,0 +1,6 @@
+<h1>Please enter the id of the user who has died.</h1>
+
+<%= form_tag '/send_users_posts' do %>
+  User's ID: <%= number_field_tag "UserID" %> <br />
+  <%= submit_tag "Declare Dead" %>
+<% end %>
