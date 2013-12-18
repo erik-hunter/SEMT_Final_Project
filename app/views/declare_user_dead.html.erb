@@ -1,5 +1,7 @@
-<h1>Please enter the id of the user who has died.</h1>
-
+<h1>Declare a user dead.</h1>
+<p>Please fill in ONE of the following fields to declare a user dead.<br />
+   That user's posts will be automatically emailed to their intended<br />
+   recepients.</p>
 <%= form_tag '/send_users_posts' do %>
   User's ID: <%= number_field_tag "UserID" %> <br />
   User's Email: <%= text_field_tag "Email" %> <br />
