@@ -1,0 +1,7 @@
+Changes from proposal to implementation:
+1. We initially wanted a user to confirm that they were still alive, before we sent out their posts. For the sake of simplicity, when a user is declared dead, their posts are automatically sent out.
+	
+Additional features from the proposal:
+1. We have a full-fledged user system, with email confirmation of accounts.
+2. Posts are delivered via email (action mailer)
+3. We also added bootstrap.
