@@ -29,6 +29,7 @@ group :development, :test do
 end
 
 group :production do
+  gem 'therubyracer'
   gem 'less-rails'
   gem 'bootstrap-sass-rails'
   gem 'twitter-bootstrap-rails'
