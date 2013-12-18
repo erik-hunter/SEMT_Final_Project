@@ -20,6 +20,11 @@ FinalProject::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+  
+  	config.cache_classes = true
+	config.serve_static_assets = true
+	config.assets.compile = true
+	config.assets.digest = true
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
