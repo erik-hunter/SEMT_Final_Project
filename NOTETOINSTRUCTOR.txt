@@ -5,3 +5,12 @@ Additional features from the proposal:
 1. We have a full-fledged user system, with email confirmation of accounts.
 2. Posts are delivered via email (action mailer)
 3. We also added bootstrap.
+
+Using the app (for the grader)
+We've set up a clean google email adress so you don't have to enter your personal address and so you can see some contrived behavior. Here are the credentials
+
+name: semt.test@gmail.com
+password: semttestpw
+
+Once registered and logged in, you can make posts/report people dead. The user tc_test has some messages directed towards semt.test@gmail.com. On the app, report the username tc_test to be dead, and check the gmail inbox of semt.test@gmail.com to see tc_tests messages with coordinates (the coordinates are just in the Himilayas, there's nothing there but huge seismic activity). You can also create posts and report yourself dead to test functionality. 
+
